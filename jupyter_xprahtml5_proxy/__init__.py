@@ -82,7 +82,7 @@ def setup_xprahtml5():
         '--no-systemd-run',  # do not delegated start-cmd to the system wide proxy server instance
         '--sharing',  # this allows to open the desktop in multiple browsers at the same time
         '--no-daemon',  # mandatory
-        '-d', # add 2 sec sleep
+        '-d ALL', # add 2 sec sleep
     ]
     logger.info('Xpra command: ' + ' '.join(cmd))
 

@@ -66,6 +66,7 @@ def setup_xprahtml5():
         get_xpra_executable('xpra'),
         'start',
         '--html=on',
+        '--ssl=off',
         '--bind={unix_socket},auth=none',  # using sockets + jupyter-server-proxy => auth is not needed here
         '--socket-dir=' + socket_path,
         '--start=xterm -xrm "XTerm*selectToClipboard: true" -fa "DejaVu Sans Mono" -fs 14',
